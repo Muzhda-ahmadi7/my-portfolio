@@ -4,6 +4,8 @@ Personal portfolio of **Muzhda Ahmadi** — Frontend Developer and Web Developme
 Student. Originally built as a static multi-page HTML/CSS site, now rebuilt as a
 React single-page app with the same design and content.
 
+**Live:** https://muzhda-ahmadi7.github.io/my-portfolio/
+
 ## Stack
 
 - React 19 + React Router DOM 7
@@ -40,9 +42,16 @@ npm run preview    # preview the production build
 
 ## Deploy
 
-Pushing to `main` builds and publishes the site to GitHub Pages through
-`.github/workflows/deploy.yml`. The build uses `VITE_BASE=/my-portfolio/` so the
-app is served from the repository sub-path; locally the base stays `/`.
+The site is published to GitHub Pages from the `gh-pages` branch:
+
+```bash
+npm run deploy
+```
+
+This builds with `VITE_BASE=/my-portfolio/` (so the app is served from the
+repository sub-path; locally the base stays `/`) and pushes the `dist/`
+contents to the `gh-pages` branch. GitHub Pages republishes automatically in
+about a minute.
 
 `public/404.html` + the small restore script in `index.html` make direct links
 such as `/my-portfolio/about` work on GitHub Pages.
