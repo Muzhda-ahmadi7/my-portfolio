@@ -1,327 +1,38 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <title>Home &mdash; Muzhda Ahmadi</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Muzhda Ahmadi - Frontend Developer and Web Development Student from Afghanistan. Selected work, education, and contact."
+    />
+    <meta name="theme-color" content="#07512f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muzhda Ahmadi - Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Muzhda Ahmadi - Frontend Developer and Web Development Student."
+    />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%images/profile.svg" />
+    <title>Muzhda Ahmadi &mdash; Frontend Developer</title>
+    <script>
+      // Undo the 404.html SPA fallback redirect (GitHub Pages deep links).
+      // "/repo/?/about" -> "/repo/about" so react-router sees the real route.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) { return s.replace(/~and~/g, "&"); })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
   </head>
   <body>
-    <header class="site-nav">
-      <a class="brand" href="index.html"> [Muzhda Ahmadi] </a>
-      <button aria-expanded="false" class="menu-toggle">
-        Menu
-        <span class="hamb">
-          <i> </i>
-          <i> </i>
-        </span>
-      </button>
-      <nav class="nav-menu">
-        <a href="index.html"> Home </a>
-        <a href="work.html"> Work </a>
-        <a href="about.html"> About </a>
-        <a href="education.html"> Education </a>
-        <a href="contact.html"> Contact </a>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1 class="hero-heading">
-            <span class="line hero-line-a">
-              Frontend
-              <span class="portrait">
-                <img alt="Muzhda" src="images/muzhda.jpg" />
-              </span>
-              Developer
-            </span>
-            <span class="line hero-line-b">
-              building my path through technology.
-            </span>
-          </h1>
-          <p class="hero-subtitle">[AVAILABLE FOR OPPORTUNITIES]</p>
-        </div>
-      </section>
-      <section class="container">
-        <div class="section-label">[Selected Work]</div>
-        <div class="work-grid">
-          <article class="work-card side-project">
-            <a href="projects/dreamhome.html">
-              <div class="work-card-visual">
-                <img
-                  alt="the dreamhome project preview"
-                  src="images/dreamhome.png"
-                />
-              </div>
-              <div class="work-card-body">
-                <span class="label"> Netlinks Bootcamp · Web Development </span>
-                <h3>Dream Home</h3>
-                <p>
-                  A collaborative real-estate website recreated as part of the
-                  Netlinks Web Development Bootcamp Challenge. Our five-member
-                  team developed the website from a provided reference and
-                  achieved 1st place in class.
-                </p>
-                <div class="work-tags">
-                  <span class="work-tag"> Team Bootcamp Project </span>
-                  <span class="work-tag"> 1st Place in Class </span>
-                </div>
-              </div>
-            </a>
-          </article>
-          <article class="work-card side-project">
-            <a href="projects/ecommerce.html">
-              <div class="work-card-visual">
-                <div class="project-visual bg-gray">
-                  <img
-                    alt="the skincare project preview"
-                    src="images/skincare pw.png"
-                  />
-                </div>
-              </div>
-              <div class="work-card-body">
-                <span class="label">
-                  HTML & CSS · Netlinks Bootcamp · 2026
-                </span>
-                <h3>Essential — E-Commerce Website</h3>
-                <p>
-                  A foundational e-commerce website created during my first
-                  Netlinks Bootcamp, focused on HTML structure and CSS design.
-                </p>
-                <div class="work-tags">
-                  <span class="work-tag"> Team Project </span>
-                </div>
-              </div>
-            </a>
-          </article>
-          <article class="work-card side-project">
-            <a href="projects/form.html">
-              <div class="work-card-visual">
-                <div class="project-visual bg-cream">
-                  <img
-                    alt="contact form project preview"
-                    src="images/conntect.png"
-                  />
-                </div>
-              </div>
-              <div class="work-card-body">
-                <span class="label">
-                  Netlinks &middot; HTML & CSS · Responsive Design &middot; 2026
-                </span>
-                <h3>Responsive Contact Form</h3>
-                <p>
-                  A responsive contact form project focused on HTML structure,
-                  CSS styling, responsive layouts, and user-friendly form
-                  design.
-                </p>
-                <div class="work-tags">
-                  <span class="work-tag"> Self Project </span>
-                </div>
-              </div>
-            </a>
-          </article>
-        </div>
-        <a class="work-cta" href="work.html">
-          View All Work
-          <span class="icon"> &rarr; </span>
-        </a>
-      </section>
-      <section class="container">
-        <div class="section-label">[About Me]</div>
-        <div class="about-grid">
-          <div class="about-image">
-            <div class="about-dashes">
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              <span> </span>
-            </div>
-            <img alt="Muzhda Ahmadi" src="images/muzhda.jpg" />
-          </div>
-          <div class="about-copy">
-            <small> Hello! I&rsquo;m Muzhda. </small>
-            <h2>
-              I&rsquo;m a student and aspiring Frontend Developer from
-              Afghanistan.
-            </h2>
-            <p>
-              I completed my secondary education online in 2026 and began my Web
-              Development journey at Netlinks in June 2026.
-            </p>
-            <p>
-              I enjoy learning through practice, working on real and
-              collaborative projects, experimenting with new ideas, and solving
-              problems when things do not work as expected.
-            </p>
-            <p>
-              I&rsquo;m especially interested in frontend development, UI/UX,
-              technology, creativity, and practical digital experiences.
-            </p>
-            <a class="btn lime" href="about.html"> More About Me &rarr; </a>
-          </div>
-        </div>
-      </section>
-      <section class="container">
-        <div class="section-label">[What I Do]</div>
-        <div class="services">
-          <div class="service">
-            <span class="service-num"> 01 </span>
-            <h3>Frontend Development</h3>
-            <p>
-              Building responsive and practical websites using HTML and CSS
-              while continuing to develop my JavaScript skills.
-            </p>
-          </div>
-          <div class="service">
-            <span class="service-num"> 02 </span>
-            <h3>Web Design</h3>
-            <p>
-              Creating clean and purposeful website layouts with a focus on
-              structure, usability, and visual clarity.
-            </p>
-          </div>
-          <div class="service">
-            <span class="service-num"> 03 </span>
-            <h3>UI Design</h3>
-            <p>
-              Designing interfaces and layouts using Figma and exploring how
-              design ideas can be translated into code.
-            </p>
-          </div>
-          <div class="service">
-            <span class="service-num"> 04 </span>
-            <h3>Collaborative Development</h3>
-            <p>
-              Contributing to team projects through ideation, coding, problem
-              solving, and collaboration.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="container">
-        <div class="section-label">[Learning / Organizations]</div>
-        <div class="orgs">
-          <div class="org">
-            <h3>Netlinks</h3>
-            <p>Web Development Training</p>
-            <span> 2026 &ndash; Present </span>
-          </div>
-          <div class="org">
-            <h3>Learn Afghan Zarghona Ana</h3>
-            <p>Online Secondary Education</p>
-            <span> 2024 &ndash; 2026 </span>
-          </div>
-          <div class="org">
-            <h3>War Child Canada</h3>
-            <p>Computer Skills Training</p>
-            <span> 6-month program </span>
-          </div>
-          <div class="org">
-            <h3>NSDE</h3>
-            <p>English, Mathematics &amp; Writing Learning</p>
-            <span> Learning Program </span>
-          </div>
-        </div>
-      </section>
-      <section class="container">
-        <div class="quote">
-          <blockquote>
-            &ldquo;I believe the best way to learn technology is by building,
-            experimenting, solving problems, and continuing to improve.&rdquo;
-          </blockquote>
-          <cite>
-            Muzhda Ahmadi
-            <span> Frontend Developer &amp; Web Development Student </span>
-          </cite>
-        </div>
-      </section>
-      <section class="container">
-        <div class="section-label">[FAQ]</div>
-        <div class="faq">
-          <div class="faq-item">
-            <div class="faq-q">
-              <h3>What technologies do I work with?</h3>
-              <span> + </span>
-            </div>
-            <div class="faq-answer">
-              I currently work with HTML, CSS, JavaScript, Git, GitHub, Figma,
-              and VS Code.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">
-              <h3>What am I currently learning?</h3>
-              <span> + </span>
-            </div>
-            <div class="faq-answer">
-              I&rsquo;m currently continuing my Web Development journey through
-              the Netlinks training program, where I&rsquo;m developing
-              practical frontend skills through exercises and collaborative
-              projects.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">
-              <h3>What kind of projects do I work on?</h3>
-              <span> + </span>
-            </div>
-            <div class="faq-answer">
-              I work on frontend development exercises, website recreations,
-              UI-focused projects, team bootcamp projects, and personal practice
-              builds.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">
-              <h3>Are all my projects live?</h3>
-              <span> + </span>
-            </div>
-            <div class="faq-answer">
-              Not yet. Many of my current projects are educational exercises or
-              team assignments, so some are presented through screenshots,
-              GitHub repositories, or project case studies.
-            </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q">
-              <h3>What are my main interests?</h3>
-              <span> + </span>
-            </div>
-            <div class="faq-answer">
-              My main interests include frontend development, UI/UX, software
-              development, technology, creativity, and practical innovation.
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="container">
-        <div class="final-cta">
-          <small>
-            Open to learning opportunities, collaborations, internships, and
-            projects
-          </small>
-          <h2>Let&rsquo;s build something meaningful.</h2>
-          <a class="btn lime" href="contact.html"> Let&rsquo;s Talk &rarr; </a>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer-top">
-        <div>
-          <a class="footer-brand" href="index.html"> [Muzhda Ahmadi] </a>
-          <p>Frontend Developer &amp; Web Development Student</p>
-        </div>
-        <a class="btn lime" href="contact.html"> Let's Talk &rarr; </a>
-      </div>
-      <div class="footer-bottom">
-        <span> &copy; 2026 Muzhda Ahmadi </span>
-        <nav class="social">
-          <a href="https://github.com/Muzhda-ahmadi7"> GitHub </a>
-          <a href="https://www.linkedin.com/in/muzhda-ahmadi-a066013a6?utm_source=share_via&utm_content=profile&utm_medium=member_android"> LinkedIn </a>
-          <a href="mailto:muzhdaahmadi2009@gmail.com"> Email </a>
-        </nav>
-      </div>
-    </footer>
-    <script src="js/script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
